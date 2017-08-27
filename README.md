@@ -11,3 +11,5 @@ Se desarrollará una aplicación individual que contendrán los siguientes eleme
 - Al presionar el botón finalizar este debe dirigir a una activity donde mostrará una listview con los articulos agregados (dependiendo si se presionó agregar a un artículo) y el total de compra.  
 
 ¡Suerte!
+
+**NOTA**: Debido a la versión de Android de mi computadora no cree el proyecto, por lo que cada uno deberá crear un proyecto inicial.
