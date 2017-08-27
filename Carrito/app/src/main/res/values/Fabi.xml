@@ -1,2 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string-array name="Opciones">
+        <item>Ropa</item>
+        <item>Zapatos</item>
+        <item>Bolsas</item>
+        <item>Accesorios</item>
+    </string-array>
+
+    <string-array name="Ropa">
+        <item>Blusa</item>
+        <item>Vestido</item>
+
+    </string-array>
+    <string-array name="Zapatos">
+        <item>Tacones negros</item>
+        <item>Tacones rojos</item>
+
+    </string-array>
+
+
+    <string-array name="Bolsas">
+        <item>Bolsa coral</item>
+        <item>Bolsa naranja</item>
+
+    </string-array>
+
+    <string-array name="Accesorios">
+        <item>Labial</item>
+        <item>Perfume</item>
+    </string-array>
+
+
+    <string-array name="imagenesRopa">
+        <item>@drawable/ropa</item>
+        <item>@drawable/vestido</item>
+    </string-array>
+
+    <string-array name="imagenesZapatos">
+        <item>@drawable/zapatos</item>
+        <item>@drawable/tacones</item>
+
+    </string-array>
+
+    <string-array name="imagenesBolsas">
+        <item>@drawable/bolsas</item>
+        <item>@drawable/bolso</item>
+    </string-array>
+
+    <string-array name="imagenesAccesorios">
+        <item>@drawable/labial</item>
+        <item>@drawable/perfume</item>
+    </string-array>
+
+    <string-array name="precioRopa">
+        <item>$200</item>
+        <item>$300</item>
+    </string-array>
+
+    <string-array name="preciozapatos">
+        <item>$350</item>
+        <item>$400</item>
+    </string-array>
+
+    <string-array name="precioBolsas">
+        <item>$530</item>
+        <item>$480</item>
+    </string-array>
+
+    <string-array name="precioaccesorios">
+        <item>$150</item>
+        <item>$200</item>
+    </string-array>
+
+
+
+
+
+</resources>
