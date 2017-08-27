@@ -1,2 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+
+
+
+<resources>
+
+    <string-array name="categorias">
+        <item>Labiales</item>
+        <item>Maquillajes</item>
+        <item>Cremas</item>
+        <item>Mascara para pestañas</item>
+    </string-array>
+
+    <string-array name="labiales">
+        <item>labial uno</item>
+        <item>labial dos</item>
+    </string-array>
+
+    <string-array name="precioLabiales">
+        <item>$55</item>
+        <item>$78</item>
+    </string-array>
+
+    <string-array name="imagenlabial">
+        <item>@drawable/labial</item>
+        <item>@drawable/rojo</item>
+    </string-array>
+
+    <string-array name="maquillaje">
+        <item>maquillaje uno</item>
+        <item>maquillaje dos</item>
+    </string-array>
+
+    <string-array name="preciomaquillajes">
+        <item>$105</item>
+        <item>$210</item>
+    </string-array>
+
+    <string-array name="imagenmaquillaje">
+        <item>@drawable/maquillaje2</item>
+        <item>@drawable/combolabial</item>
+
+    </string-array>
+
+    <string-array name="cremas">
+        <item>crema umo</item>
+        <item>crema dos</item>
+    </string-array>
+
+    <string-array name="precioCremas">
+        <item>$155</item>
+        <item>$178</item>
+    </string-array>
+
+    <string-array name="imagencremas">
+        <item>@drawable/cremados</item>
+        <item>@drawable/cremados</item>
+    </string-array>
+
+    <string-array name="mascara">
+        <item>mascara uno</item>
+        <item>mascara dos</item>
+    </string-array>
+
+    <string-array name="preciomascaras">
+        <item>$65</item>
+        <item>$98</item>
+    </string-array>
+
+    <string-array name="imagenesmascara">
+        <item>@drawable/mascarapestanas</item>
+        <item>@drawable/colosal</item>
+    </string-array>
+</resources>
