@@ -1,2 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string-array name="opciones">
+        <item>Celular</item>
+        <item>Tablet</item>
+        <item>Spinner</item>
+        <item>SmartWatches</item>
+    </string-array>
+
+    <string-array name="nombreCelular">
+        <item>Samsung Galaxy S6</item>
+        <item>iPhone 6</item>
+    </string-array>
+    <string-array name="precioCelular">
+        <item>$9,999</item>
+        <item>$6,859</item>
+    </string-array>
+    <string-array name="imagenesCelular">
+        <item>@drawable/samsunggalaxymega</item>
+        <item>@drawable/iphone6</item>
+    </string-array>
+
+    <string-array name="nombresTablet">
+        <item>iPad de 9.7 pulgadas 32 GB</item>
+        <item>Galaxy Tab S</item>
+    </string-array>
+    <string-array name="preciosTablet">
+        <item>$7,999</item>
+        <item>$7,999</item>
+    </string-array>
+    <string-array name="imagenesTablet">
+        <item>@drawable/ipad</item>
+        <item>@drawable/samsung</item>
+    </string-array>
+    
+    <string-array name="nombreSpinner">
+        <item>Hand Spinner</item>
+        <item>Hand Spinner Batman</item>
+    </string-array>
+    <string-array name="preciosSpinner">
+        <item>$60</item>
+        <item>$70</item>
+    </string-array>
+    <string-array name="imagenesSpinner">
+        <item>@drawable/spinner</item>
+        <item>@drawable/spinnerbatman</item>
+    </string-array>
+
+    <string-array name="nombresWatches">
+        <item>Smartwatch Iwo 2a Gen Iwatch</item>
+        <item>iWatch Series2</item>
+    </string-array>
+    <string-array name="preciosWatches">
+        <item>$3,350</item>
+        <item>$6,490</item>
+    </string-array>
+    <string-array name="imagenesWatches">
+        <item>@drawable/iwatch</item>
+        <item>@drawable/iwatchdos</item>
+    </string-array>
+</resources>

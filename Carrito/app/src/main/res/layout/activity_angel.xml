@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fabi.carrito.AngelActivity">
+    <Spinner
+        android:id="@+id/tipoArticulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/imagenArticulo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/tipoArticulo"/>
+    <TextView
+        android:id="@+id/nombreArticulo"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipoArticulo"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/imagenArticulo"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/precioArticulo"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombreArticulo"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/imagenArticulo"
+        android:layout_marginTop="10dp"/>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imagenArticulo"
+        android:id="@+id/listaArticulos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>
