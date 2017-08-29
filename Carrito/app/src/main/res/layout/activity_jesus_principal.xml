@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fabi.carrito.Jesus_principal">
+
+<Spinner
+    android:id="@+id/SpinnerPricipal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+</Spinner>
+<ImageView
+    android:id="@+id/ImagenPrincipal"
+    android:layout_width="170dp"
+    android:layout_height="170dp"
+    android:layout_below="@+id/SpinnerPricipal"
+    android:layout_marginTop="15dp"
+    android:src="@drawable/hplaptop"/>
+<TextView
+    android:id="@+id/textUnoPrincipal"
+    android:layout_width="170dp"
+    android:layout_height="30dp"
+    android:layout_toRightOf="@+id/ImagenPrincipal"
+    android:layout_below="@+id/SpinnerPricipal"
+    android:layout_marginTop="35dp"
+    android:layout_marginLeft="10dp"
+    android:text="Nombre"
+    android:textAppearance="?android:textAppearanceLarge"
+    />
+    <TextView
+        android:id="@+id/textDosPrincipal"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/ImagenPrincipal"
+        android:layout_below="@+id/textUnoPrincipal"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Precio"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    <ListView
+        android:id="@+id/listViewPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@+id/ImagenPrincipal">
+
+    </ListView>
+</RelativeLayout>

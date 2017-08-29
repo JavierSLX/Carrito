@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Fabi"></activity>
+        <activity android:name=".Fabi" />
+        <activity android:name=".Jesus_principal" />
+        <activity android:name=".detallesArticulos" />
+        <activity android:name=".Carrito_jesus"></activity>
     </application>
 
 </manifest>

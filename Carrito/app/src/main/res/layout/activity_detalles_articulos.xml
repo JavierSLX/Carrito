@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fabi.carrito.detallesArticulos">
+
+    <ImageView
+        android:id="@+id/detallesNintendo"
+        android:layout_width="380dp"
+        android:layout_height="350dp"/>
+    <TextView
+        android:id="@+id/detallesNombre"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/detallesNintendo"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/detallesPrecio"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/detallesNombre"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+    <Button
+        android:id="@+id/detallesBoton"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/detallesPrecio"
+        android:text="Regresar"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nombreCarrito"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:text="nombre"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/precioCarrito"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:text="precio"
+        android:layout_below="@id/nombreCarrito"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+
+</RelativeLayout>

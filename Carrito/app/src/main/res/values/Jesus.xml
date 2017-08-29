@@ -1,2 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string-array name="opcion">
+        <item>Laptop</item>
+        <item>Celular</item>
+        <item>Consolas</item>
+        <item>Pantallas</item>
+    </string-array>
+    <string-array name="nombresLaptop">
+        <item>hp</item>
+        <item>acer</item>
+    </string-array>
+    <string-array name="preciosLaptos">
+        <item>2000</item>
+        <item>3000</item>
+    </string-array>
+    <string-array name="nombrescelulares">
+        <item>Huawie</item>
+        <item>Samsung</item>
+    </string-array>
+    <string-array name="preciosCelulares">
+        <item>3000</item>
+        <item>4000</item>
+    </string-array>
+    <string-array name="nombresConsolas">
+        <item>64</item>
+        <item>xbox</item>
+    </string-array>
+    <string-array name="preciosConsolas">
+        <item>2000</item>
+        <item>4000</item>
+    </string-array>
+    <string-array name="nombresPantalla">
+        <item>lg</item>
+        <item>smart</item>
+    </string-array>
+    <string-array name="preciosPantalla">
+        <item>6000</item>
+        <item>7000</item>
+    </string-array>
+    <string-array name="imagenesLaptop">
+        <item>@drawable/hplaptop</item>
+        <item>@drawable/acer</item>
+    </string-array>
+    <string-array name="imagenesCelulares">
+        <item>@drawable/huawei</item>
+        <item>@drawable/samsung</item>
+    </string-array>
+    <string-array name="imagenesConsolas">
+        <item>@drawable/intendo64</item>
+        <item>@drawable/xbox</item>
+    </string-array>
+    <string-array name="imagenesPantallas">
+        <item>@drawable/lg</item>
+        <item>@drawable/smart</item>
+    </string-array>
+</resources>
