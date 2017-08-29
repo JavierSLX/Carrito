@@ -8,16 +8,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre"
-        android:textAppearance="?android:textAppearanceLarge"
+        android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@color/colorAccent"
-        android:layout_marginLeft="10dp"/>
+        />
     <Button
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Agregar"
         android:layout_toRightOf="@+id/nombre"
-        android:layout_marginLeft="200dp"
+        android:layout_marginLeft="150dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         />
 
 

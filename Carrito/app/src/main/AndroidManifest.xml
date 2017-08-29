@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Fabi" />
-        <activity android:name=".adi"></activity>
+        <activity android:name=".adi" />
+        <activity android:name=".DetallesAdi" />
+        <activity android:name=".CarritoAdi" />
     </application>
 
 </manifest>

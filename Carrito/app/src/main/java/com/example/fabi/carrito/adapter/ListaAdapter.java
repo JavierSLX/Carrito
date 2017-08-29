@@ -7,8 +7,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.fabi.carrito.R;
+import com.example.fabi.carrito.adi;
 import com.example.fabi.carrito.modelo.lista;
 
 import java.util.ArrayList;
@@ -20,6 +22,7 @@ import java.util.ArrayList;
 public class ListaAdapter extends BaseAdapter {
     private ArrayList<lista> elementos;
     private Context context;
+
 
     public ListaAdapter(ArrayList<lista> elementos, Context context) {
         this.elementos = elementos;
@@ -42,7 +45,7 @@ public class ListaAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View convertView, ViewGroup viewGroup) {
+    public View getView(final int i, View convertView, ViewGroup viewGroup) {
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         View view = convertView;
         if(convertView == null){
@@ -52,7 +55,17 @@ public class ListaAdapter extends BaseAdapter {
 
         //Relaciona cada elemento con su view
         TextView nombre = (TextView) view.findViewById(R.id.nombre);
-        Button add = (Button) view.findViewById(R.id.btn);
+        final Button add = (Button) view.findViewById(R.id.btn);
+
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Toast.makeText(context,"Se agrego al carrito",Toast.LENGTH_SHORT).show();
+                adi.carrito(context, i);
+
+            }
+        });
 
         //Coloca los valores de cada elemento
         nombre.setText(getItem(i).getNombre());
