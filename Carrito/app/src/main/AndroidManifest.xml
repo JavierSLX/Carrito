@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Fabi" />
         <activity android:name=".AngelActivity" />
-        <activity android:name=".ArticuloAngelActivity"></activity>
+        <activity android:name=".ArticuloAngelActivity" />
+        <activity android:name=".MuestraCarrito"></activity>
     </application>
 
 </manifest>

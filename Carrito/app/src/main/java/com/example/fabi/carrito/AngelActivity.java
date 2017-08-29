@@ -1,5 +1,6 @@
 package com.example.fabi.carrito;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Parcelable;
@@ -7,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -15,24 +17,33 @@ import android.widget.Toast;
 
 import com.example.fabi.carrito.adapterAngel.ListviewAngelAdapter;
 import com.example.fabi.carrito.adapterAngel.SpinnerAngelAdapter;
+import com.example.fabi.carrito.modeloAngel.CarritoAngel;
 import com.example.fabi.carrito.modeloAngel.ListviewAngel;
 import com.example.fabi.carrito.modeloAngel.SpinnerAngel;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AngelActivity extends AppCompatActivity {
     private Spinner spinnerAngel;
     private ListView listviewAngel;
+    private Button finalizar;
     private ArrayList<SpinnerAngel>categoriaAngel;
     private ArrayList<ListviewAngel>nombresAngel;
+    public static ArrayList<CarritoAngel>carrito;
     private ImageView imagen;
+    private int imagenId;
+    static String []nombresCarrito;
+    static String []precioCarrito;
+    static int []imagenCarrito;
     TextView nombreText;
     TextView precioText;
-    String []nombres;
-    String []precio;
-    String []arregloImagenes;
-    TypedArray imagenes;
+    static String []nombres;
+    static String []precio;
+    static String []arregloImagenes;
+    static TypedArray imagenes;
     int posicionArreglo=0;
+    //static int posicion=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,9 +51,11 @@ public class AngelActivity extends AppCompatActivity {
         nombreText=(TextView)findViewById(R.id.nombreArticulo);
         precioText=(TextView)findViewById(R.id.precioArticulo);
         listviewAngel=(ListView)findViewById(R.id.listaArticulos);
+        finalizar=(Button)findViewById(R.id.finalizar);
         String []categoria=getResources().getStringArray(R.array.opciones);
         imagen=(ImageView)findViewById(R.id.imagenArticulo);
         categoriaAngel=new ArrayList<>();
+        carrito=new ArrayList<>();
         for(int i=0;i<categoria.length;i++)
         {
             categoriaAngel.add(new SpinnerAngel(categoria[i]));
@@ -61,7 +74,6 @@ public class AngelActivity extends AppCompatActivity {
                     case 0:
                         nombres=getResources().getStringArray(R.array.nombreCelular);
                         precio=getResources().getStringArray(R.array.precioCelular);
-                        arregloImagenes=getResources().getStringArray(R.array.imagenesCelular);
                         mostrarElementos(nombres,precio);
                         nombreText.setText(nombres[0].toString());
                         precioText.setText(precio[0].toString());
@@ -72,7 +84,6 @@ public class AngelActivity extends AppCompatActivity {
                     case 1:
                         nombres=getResources().getStringArray(R.array.nombresTablet);
                         precio=getResources().getStringArray(R.array.preciosTablet);
-                        arregloImagenes=getResources().getStringArray(R.array.imagenesTablet);
                         mostrarElementos(nombres,precio);
                         nombreText.setText(nombres[0].toString());
                         precioText.setText(precio[0].toString());
@@ -83,7 +94,6 @@ public class AngelActivity extends AppCompatActivity {
                     case 2:
                         nombres=getResources().getStringArray(R.array.nombreSpinner);
                         precio=getResources().getStringArray(R.array.preciosSpinner);
-                        arregloImagenes=getResources().getStringArray(R.array.imagenesSpinner);
                         mostrarElementos(nombres,precio);
                         nombreText.setText(nombres[0].toString());
                         precioText.setText(precio[0].toString());
@@ -94,7 +104,6 @@ public class AngelActivity extends AppCompatActivity {
                     case 3:
                         nombres=getResources().getStringArray(R.array.nombresWatches);
                         precio=getResources().getStringArray(R.array.preciosWatches);
-                        arregloImagenes=getResources().getStringArray(R.array.imagenesWatches);
                         mostrarElementos(nombres,precio);
                         nombreText.setText(nombres[0].toString());
                         precioText.setText(precio[0].toString());
@@ -115,14 +124,16 @@ public class AngelActivity extends AppCompatActivity {
                 imagen.setImageResource(imagenes.getResourceId(0,0));
             }
         });
-        listviewAngel.setClickable(true);
+
         listviewAngel.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 posicionArreglo=i;
+                //posicion=i;
                 nombreText.setText(nombres[i].toString());
                 precioText.setText(precio[i].toString());
                 imagen.setImageResource(imagenes.getResourceId(i,0));
+                imagenId=imagenes.getResourceId(i,0);
             }
         });
         imagen.setOnClickListener(new View.OnClickListener() {
@@ -131,8 +142,15 @@ public class AngelActivity extends AppCompatActivity {
                 Intent intent=new Intent(AngelActivity.this,ArticuloAngelActivity.class);
                 intent.putExtra("nombre", nombres);
                 intent.putExtra("precio", precio);
-                intent.putExtra("imagen", (Parcelable) imagenes);
                 intent.putExtra("posicion",posicionArreglo);
+                intent.putExtra("imagen",imagenId);
+                startActivity(intent);
+            }
+        });
+        finalizar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(AngelActivity.this,MuestraCarrito.class);
                 startActivity(intent);
             }
         });
@@ -146,5 +164,10 @@ public class AngelActivity extends AppCompatActivity {
         }
         ListviewAngelAdapter itemAdapter2=new ListviewAngelAdapter(AngelActivity.this,nombresAngel);
         listviewAngel.setAdapter(itemAdapter2);
+    }
+    public static void agregarCarrito(Context context,int posicion)
+    {
+        Toast.makeText(context,"Se agrego correctamente",Toast.LENGTH_SHORT).show();
+        carrito.add(new CarritoAngel(nombres[posicion],precio[posicion],imagenes.getResourceId(posicion,0)));
     }
 }

@@ -15,6 +15,7 @@ public class ArticuloAngelActivity extends AppCompatActivity {
     TextView nombreText;
     TextView precioText;
     private ImageView imagen;
+    private int imagenId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +27,8 @@ public class ArticuloAngelActivity extends AppCompatActivity {
         precio=getIntent().getStringArrayExtra("precio");
         precioText=(TextView)findViewById(R.id.precioArticulo);
         precioText.setText(precio[posicionArreglo].toString());
-        /*imagenes=getIntent().getParcelableExtra("imagen");
+        imagenId=getIntent().getIntExtra("imagen",0);
         imagen=(ImageView)findViewById(R.id.imagenGrande);
-        imagen.setImageResource(imagenes.getResourceId(posicionArreglo,0));*/
-
+        imagen.setImageResource(imagenId);
     }
 }

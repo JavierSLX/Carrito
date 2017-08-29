@@ -35,7 +35,14 @@
         android:layout_below="@id/imagenArticulo"
         android:id="@+id/listaArticulos"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="300dp">
     </ListView>
+    <Button
+        android:id="@+id/finalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        android:layout_below="@id/listaArticulos"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

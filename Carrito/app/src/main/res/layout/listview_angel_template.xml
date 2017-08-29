@@ -8,6 +8,14 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:textAppearanceLarge"
         android:textColor="@color/colorPrimaryDark"/>
+    <Button
+        android:id="@+id/agregar"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"/>
 
 
 </RelativeLayout>
