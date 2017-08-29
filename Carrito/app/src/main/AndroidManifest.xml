@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Fabi"></activity>
+        <activity android:name=".Fabi" />
+        <activity android:name=".DetallesFabi" />
+        <activity android:name=".carritoFabi" />
+        <activity android:name=".Finalizar"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fabi.carrito.DetallesFabi">
+
+    <ImageView
+        android:id="@+id/imagenDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/nombredetalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagenDetalles"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Nombre"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/precioDetalles"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombredetalles"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Precio"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/Regresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Regresar"/>
+
+
+
+
+
+</RelativeLayout>

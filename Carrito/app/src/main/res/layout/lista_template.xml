@@ -18,6 +18,8 @@
     <Button
         android:textAppearance="?android:textAppearanceLarge"
         android:text="Agregar"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -3,7 +3,7 @@
     <string-array name="Opciones">
         <item>Ropa</item>
         <item>Zapatos</item>
-        <item>Bolsas</item>
+        <item>Sombrillas</item>
         <item>Accesorios</item>
     </string-array>
 
@@ -19,9 +19,9 @@
     </string-array>
 
 
-    <string-array name="Bolsas">
-        <item>Bolsa coral</item>
-        <item>Bolsa naranja</item>
+    <string-array name="Sombrillas">
+        <item>Sombrilla colores</item>
+        <item>Sombrilla Azul</item>
 
     </string-array>
 
@@ -37,14 +37,14 @@
     </string-array>
 
     <string-array name="imagenesZapatos">
-        <item>@drawable/zapatos</item>
+        <item>@drawable/taconesnegros</item>
         <item>@drawable/tacones</item>
 
     </string-array>
 
-    <string-array name="imagenesBolsas">
-        <item>@drawable/bolsas</item>
-        <item>@drawable/bolso</item>
+    <string-array name="imagenessombrillas">
+        <item>@drawable/sombrilla</item>
+        <item>@drawable/sombrillados</item>
     </string-array>
 
     <string-array name="imagenesAccesorios">
